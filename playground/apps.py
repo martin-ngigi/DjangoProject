@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class HelloConfig(AppConfig):
+class PlaygroundConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'hello'
+    name = 'playground'
