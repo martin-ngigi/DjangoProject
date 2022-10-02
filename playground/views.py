@@ -10,4 +10,4 @@ def calculate():
 
 def sey_Hello(request):
     x=calculate()
-    return render(request, 'hello.html', {'name':''})
+    return render(request, 'hello.html', {'name':'Martin'})
