@@ -17,8 +17,8 @@ from django.contrib import admin
 from django.urls import path, include
 
 urlpatterns = [
+    path('', include('hello.urls')),
     path('admin/', admin.site.urls),
-    #Any url that starts with playground/ should be routed to our app
-    path('playground/', include('playground.urls')),
+   
     path('__debug__/', include('debug_toolbar.urls')),
 ]
