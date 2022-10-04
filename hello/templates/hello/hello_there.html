@@ -4,11 +4,12 @@
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Hello Django</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'hello/site.css' %}" />
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
     <script src='main.js'></script>
 </head>
 <body>
-    <strong> Hello there, {{ name }} !</strong> Its {{date | date:"1, d f, Y"}} at {{ date | time:"h:i:s" }}
+    <span class="message">Hello, there {{ name }}!</span> It's {{ date | date:'l, d F, Y' }} at {{ date | time:'H:i:s' }}.
 </body>
 </html>
